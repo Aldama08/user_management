@@ -24,12 +24,19 @@ import Header from "../components/Header.astro"
 
 <style>
 	html,
-	body {
+	body main{
 		margin: 0;
+		padding: 0
 		width: 100%;
 		height: 100%;
 		background-color: #181818;
 		color: aliceblue;
 		text-decoration: none;
+		scrollbar-width: none;/*Firefox*/
+		-ms=overflow: hidden; /*Edge*/
+
+	}
+	main::-webkit-scrollbar{
+		display: none; /*Chrome y Safari*/
 	}
 </style>
