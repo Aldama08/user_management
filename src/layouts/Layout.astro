@@ -1,3 +1,7 @@
+---
+import Header from "../components/Header.astro"
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,11 +10,16 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Management</title>
 	</head>
+	
+	<Header/>
+	
 	<body>
 		<slot />
 	</body>
+
+
 </html>
 
 <style>
@@ -19,5 +28,8 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		background-color: #181818;
+		color: aliceblue;
+		text-decoration: none;
 	}
 </style>
